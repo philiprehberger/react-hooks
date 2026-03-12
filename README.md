@@ -1,11 +1,11 @@
-# @philiprehberger/ts-react-hooks
+# @philiprehberger/react-hooks
 
 Reusable React hooks for common UI patterns.
 
 ## Installation
 
 ```bash
-npm install @philiprehberger/ts-react-hooks
+npm install @philiprehberger/react-hooks
 ```
 
 ## Hooks
@@ -15,7 +15,7 @@ npm install @philiprehberger/ts-react-hooks
 Lock body scroll when a condition is true. Preserves and restores scroll position.
 
 ```tsx
-import { useBodyScrollLock } from '@philiprehberger/ts-react-hooks';
+import { useBodyScrollLock } from '@philiprehberger/react-hooks';
 
 function Modal({ isOpen }: { isOpen: boolean }) {
   useBodyScrollLock(isOpen);
@@ -28,7 +28,7 @@ function Modal({ isOpen }: { isOpen: boolean }) {
 Trap keyboard focus within a container. Returns a ref to attach to the container element.
 
 ```tsx
-import { useFocusTrap } from '@philiprehberger/ts-react-hooks';
+import { useFocusTrap } from '@philiprehberger/react-hooks';
 
 function Dialog({ isOpen }: { isOpen: boolean }) {
   const ref = useFocusTrap<HTMLDivElement>(isOpen);
@@ -41,7 +41,7 @@ function Dialog({ isOpen }: { isOpen: boolean }) {
 Detect touch swipe gestures. Returns a ref to attach to the target element.
 
 ```tsx
-import { useSwipeGesture } from '@philiprehberger/ts-react-hooks';
+import { useSwipeGesture } from '@philiprehberger/react-hooks';
 
 function Drawer({ onClose }: { onClose: () => void }) {
   const ref = useSwipeGesture<HTMLDivElement>({
