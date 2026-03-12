@@ -1,5 +1,5 @@
 {
-  "name": "@philiprehberger/react-hooks",
+  "name": "@philiprehberger/ts-react-hooks",
   "version": "0.2.2",
   "description": "Reusable React hooks - scroll lock, focus trap, swipe gestures, debounce, keyboard shortcuts, image preloading, and more",
   "type": "module",
@@ -50,11 +50,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/philiprehberger/react-hooks.git"
+    "url": "git+https://github.com/philiprehberger/ts-react-hooks.git"
   },
-  "homepage": "https://github.com/philiprehberger/react-hooks#readme",
+  "homepage": "https://github.com/philiprehberger/ts-react-hooks#readme",
   "bugs": {
-    "url": "https://github.com/philiprehberger/react-hooks/issues"
+    "url": "https://github.com/philiprehberger/ts-react-hooks/issues"
   },
   "author": "Philip Rehberger",
   "engines": {
