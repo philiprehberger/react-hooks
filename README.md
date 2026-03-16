@@ -1,6 +1,6 @@
 # @philiprehberger/react-hooks
 
-[![CI](https://github.com/philiprehberger/react-hooks/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/react-hooks/actions/workflows/ci.yml)
+[![CI](https://github.com/philiprehberger/react-hooks/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/react-hooks/actions/workflows/publish.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/react-hooks.svg)](https://www.npmjs.com/package/@philiprehberger/react-hooks)
 [![License](https://img.shields.io/github/license/philiprehberger/react-hooks)](LICENSE)
 
@@ -54,6 +54,15 @@ function Drawer({ onClose }: { onClose: () => void }) {
   });
   return <div ref={ref}>...</div>;
 }
+```
+
+
+## Development
+
+```bash
+npm install
+npm run build
+npm test
 ```
 
 ## License

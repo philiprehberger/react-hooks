@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.6
+
+- Add Development section to README
+- Fix CI badge to reference publish.yml
+
 ## 0.2.1
 
 - Add author, homepage, bugs, engines fields to package.json
