@@ -4,7 +4,7 @@
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/react-hooks.svg)](https://www.npmjs.com/package/@philiprehberger/react-hooks)
 [![License](https://img.shields.io/github/license/philiprehberger/react-hooks)](LICENSE)
 
-Reusable React hooks for common UI patterns.
+Reusable React hooks for common UI patterns
 
 ## Installation
 
