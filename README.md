@@ -1,6 +1,6 @@
 # @philiprehberger/react-hooks
 
-[![CI](https://github.com/philiprehberger/react-hooks/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/react-hooks/actions/workflows/publish.yml)
+[![CI](https://github.com/philiprehberger/react-hooks/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/react-hooks/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/react-hooks.svg)](https://www.npmjs.com/package/@philiprehberger/react-hooks)
 [![License](https://img.shields.io/github/license/philiprehberger/react-hooks)](LICENSE)
 
@@ -16,7 +16,7 @@ npm install @philiprehberger/react-hooks
 
 ### `useBodyScrollLock(isLocked: boolean)`
 
-Lock body scroll when a condition is true. Preserves and restores scroll position.
+Lock body scroll when a condition is true. Preserves and restores scroll position
 
 ```tsx
 import { useBodyScrollLock } from '@philiprehberger/react-hooks';
@@ -56,6 +56,60 @@ function Drawer({ onClose }: { onClose: () => void }) {
 }
 ```
 
+## Usage
+
+```tsx
+import {
+  useBodyScrollLock,
+  useFocusTrap,
+  useDebounce,
+  useKeyboardShortcuts,
+} from '@philiprehberger/react-hooks';
+
+function Modal({ isOpen }: { isOpen: boolean }) {
+  useBodyScrollLock(isOpen);
+  const ref = useFocusTrap<HTMLDivElement>(isOpen);
+
+  return isOpen ? <div ref={ref}>Modal content</div> : null;
+}
+
+function SearchInput() {
+  const [query, setQuery] = useState('');
+  const debouncedQuery = useDebounce(query, 300);
+
+  useEffect(() => {
+    if (debouncedQuery) fetchResults(debouncedQuery);
+  }, [debouncedQuery]);
+
+  return <input value={query} onChange={(e) => setQuery(e.target.value)} />;
+}
+```
+
+## API
+
+### Hooks
+
+| Hook | Signature | Description |
+|------|-----------|-------------|
+| `useBodyScrollLock` | `(isLocked: boolean) => void` | Lock body scroll when a condition is true |
+| `useFocusTrap` | `<T extends HTMLElement>(isActive: boolean) => RefObject<T>` | Trap keyboard focus within a container |
+| `useSwipeGesture` | `<T extends HTMLElement>(options: SwipeOptions) => RefObject<T>` | Detect touch swipe gestures |
+| `useDebounce` | `<T>(value: T, delay?: number) => T` | Debounce a value (default: 500ms) |
+| `useDebouncedCallback` | `<T>(callback: T, delay?: number) => T` | Debounce a callback function |
+| `usePrefersReducedMotion` | `() => boolean` | Detect user's reduced motion preference |
+| `useKeyboardShortcuts` | `(shortcuts: KeyboardShortcut[], options?) => KeyboardShortcut[]` | Register keyboard shortcuts with modifier key support |
+| `useKeyboardNavigation` | `(options: UseKeyboardNavigationOptions) => UseKeyboardNavigationReturn` | Keyboard navigation for lists and menus (roving tabindex) |
+| `useImagePreload` | `(options: UseImagePreloadOptions) => UseImagePreloadReturn` | Preload images with progress tracking |
+
+### Utilities
+
+| Function | Signature | Description |
+|----------|-----------|-------------|
+| `formatShortcut` | `(shortcut: KeyboardShortcut) => string` | Format a shortcut for display (e.g., "Ctrl+S") |
+| `getShortcutKeys` | `(shortcut: KeyboardShortcut) => string[]` | Get individual key parts for rendering badges |
+| `groupShortcutsByCategory` | `(shortcuts: KeyboardShortcut[]) => Map<string, KeyboardShortcut[]>` | Group shortcuts by category |
+| `preloadImage` | `(src: string) => Promise<HTMLImageElement>` | Preload a single image imperatively |
+| `preloadImages` | `(sources: string[], onProgress?) => Promise<HTMLImageElement[]>` | Preload multiple images with progress callback |
 
 ## Development
 
