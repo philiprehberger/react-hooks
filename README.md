@@ -1,8 +1,8 @@
 # @philiprehberger/react-hooks
 
-[![CI](https://github.com/philiprehberger/react-hooks/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/react-hooks/actions/workflows/ci.yml)
+[![CI](https://github.com/philiprehberger/ts-react-hooks/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/ts-react-hooks/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/react-hooks.svg)](https://www.npmjs.com/package/@philiprehberger/react-hooks)
-[![License](https://img.shields.io/github/license/philiprehberger/react-hooks)](LICENSE)
+[![License](https://img.shields.io/github/license/philiprehberger/ts-react-hooks)](LICENSE)
 
 Reusable React hooks for common UI patterns
 
