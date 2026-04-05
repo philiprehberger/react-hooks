@@ -1,8 +1,8 @@
 # @philiprehberger/react-hooks
 
-[![CI](https://github.com/philiprehberger/react-hooks/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/react-hooks/actions/workflows/ci.yml)
+[![CI](https://github.com/philiprehberger/ts-react-hooks/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/ts-react-hooks/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/react-hooks.svg)](https://www.npmjs.com/package/@philiprehberger/react-hooks)
-[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/react-hooks)](https://github.com/philiprehberger/react-hooks/commits/main)
+[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/ts-react-hooks)](https://github.com/philiprehberger/ts-react-hooks/commits/main)
 
 Reusable React hooks for common UI patterns
 
@@ -123,11 +123,11 @@ npm test
 
 If you find this project useful:
 
-⭐ [Star the repo](https://github.com/philiprehberger/react-hooks)
+⭐ [Star the repo](https://github.com/philiprehberger/ts-react-hooks)
 
-🐛 [Report issues](https://github.com/philiprehberger/react-hooks/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+🐛 [Report issues](https://github.com/philiprehberger/ts-react-hooks/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
 
-💡 [Suggest features](https://github.com/philiprehberger/react-hooks/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+💡 [Suggest features](https://github.com/philiprehberger/ts-react-hooks/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
 
 ❤️ [Sponsor development](https://github.com/sponsors/philiprehberger)
 
