@@ -15,4 +15,16 @@ describe('react-hooks', async () => {
   it('exports useDebounce as a function', () => {
     assert.ok(typeof mod.useDebounce === 'function');
   });
+
+  it('exports useClickOutside as a function', () => {
+    assert.ok(typeof mod.useClickOutside === 'function');
+  });
+
+  it('exports useWindowSize as a function', () => {
+    assert.ok(typeof mod.useWindowSize === 'function');
+  });
+
+  it('exports useIntersectionObserver as a function', () => {
+    assert.ok(typeof mod.useIntersectionObserver === 'function');
+  });
 });

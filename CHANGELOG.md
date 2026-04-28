@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0 (2026-04-27)
+
+- Add `useClickOutside` hook for outside-click detection
+- Add `useWindowSize` hook with optional debounce and SSR safety
+- Add `useIntersectionObserver` hook for scroll-driven UI patterns
+- Compliance: README restructured to standard 9-section layout
+
 ## 0.2.9
 
 - Fix README GitHub URLs to use correct repo name (ts-react-hooks)

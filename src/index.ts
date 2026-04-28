@@ -23,3 +23,13 @@ export {
   type ImagePreloadState,
   type UseImagePreloadReturn,
 } from './useImagePreload';
+export { useClickOutside } from './useClickOutside';
+export {
+  useWindowSize,
+  type UseWindowSizeOptions,
+  type WindowSize,
+} from './useWindowSize';
+export {
+  useIntersectionObserver,
+  type UseIntersectionObserverReturn,
+} from './useIntersectionObserver';
